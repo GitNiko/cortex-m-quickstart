@@ -7,3 +7,7 @@ debug:
   -gdb tcp::3333 \
   -S \
   -kernel target/thumbv7m-none-eabi/debug/examples/hello
+install:
+  rustup component add llvm-tools-preview && \
+  cargo install cargo-binutils && \
+  
